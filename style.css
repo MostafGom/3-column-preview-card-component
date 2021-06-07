@@ -1,0 +1,84 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Big Shoulders Display", cursive;
+  background-color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    top: 100%;
+  }
+}
+@media (min-width: 374px) {
+  .sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .lux {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.card {
+  padding: 20px;
+}
+
+.card h2 {
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card button {
+  padding: 10px 20px;
+  border-radius: 60px;
+  background-color: inherit;
+  border: 2px solid whitesmoke;
+  font-weight: 700;
+}
+
+.card button:hover {
+  background-color: white;
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.lux {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card img {
+  padding: 20px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(31, 77%, 52%);
+}
